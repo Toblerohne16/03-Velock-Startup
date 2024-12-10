@@ -1,0 +1,305 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif; 
+}
+
+body{
+    background-color: #EFEEF5;
+    /* font-family: Arial, sans-serif; */
+}
+
+header{
+    background-color: white;
+}
+
+.menu_gesamt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+#logo_nav img {
+    width: 100px;
+    height: auto;
+}
+
+.nav_menu{
+    display: flex;
+    gap: 30px;  
+    margin: 30px;  
+}
+
+.nav_menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav_menu a:hover {
+    color: #9592F0;
+}
+    
+
+#logo_nav{
+    width: 100px;
+    height: 65px;
+    justify-content: left;  
+    /* border: 3px black solid; */
+    
+}
+
+article{
+    background-color: #9592F0;
+}
+
+.video_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Container nimmt die gesamte Breite ein */
+    height: 100vh; /* Nimmt die gesamte Höhe des Viewports ein */
+    max-width: 80%;
+    max-height: 60%;
+    overflow: hidden; /* Entfernt überflüssigen Inhalt */
+    margin: auto;
+}
+
+video {
+    width: 80%; /* Passt das Video an den Container an */
+    height: auto; /* Erhält das Seitenverhältnis */
+    display: block;
+    border-radius: 10px;
+}
+
+main {
+    background-color: #EFEEF5;
+    color: #353547;
+    margin: 5% 10% 6% 10%;
+    display: flex; /* Aktiviert Flexbox */
+    justify-content: space-between; /* Platz zwischen den Spalten */
+    align-items: center; /* Horizontale Bilder vertikal ausrichten */
+    gap: 40px; /* Abstand zwischen den beiden Seiten */
+}
+
+.start_links, .start_rechts {
+    display: flex;
+    flex-direction: column; /* Inhalt bleibt untereinander */
+    align-items: center; /* Zentriert den Inhalt innerhalb der Spalten */
+    text-align: center; /* Zentriert Texte unter den Bildern */
+    flex: 1; /* Gleiche Breite für beide Spalten */
+}
+
+.start_links img,
+.start_rechts img {
+    width: 550px; /* Gleiche Breite für beide Bilder */
+    height: auto; /* Seitenverhältnis bleibt erhalten */
+}
+
+.start_rechts {
+    align-items: flex-end; /* Inhalt rechtsbündig */
+}
+
+.start_rechts a{
+   margin-top: 20px;
+    width: 350px;
+}
+
+
+.start_links img{
+    /* border: solid; */
+    width: 550px;
+}
+
+.start_rechts img{
+    width: 350px;
+}
+
+.start_links button{
+    background-color: #6863F2;
+    color: white;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.start_links button:hover{
+    cursor: pointer;
+    color: #6863F2;
+    background-color: #EFEEF5;
+    border: 2px solid #6863F2
+}
+
+#values{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5% 10% 5% 10%;
+    gap: 30px;
+}
+
+#values div {
+    flex: 1; /* Alle Spalten nehmen gleich viel Platz ein */
+}
+
+#values img{
+    width: 80px; /* Einheitliche Breite */
+    height: 80px; /* Einheitliche Höhe */
+    object-fit: contain; /* Behält das Seitenverhältnis des Bildes bei */
+    padding: 10px;
+}
+
+#values h1 {
+    font-size: 24px;
+}
+
+#values a{
+    display: block;
+    margin-top: 20px;
+    color: #353547;
+    /* border: solid 2px; */
+}
+
+#partner {
+    background-color: #9592F0; /* Hintergrundfarbe */
+    padding: 5%; /* Innenabstand für den Container */
+}
+
+.partner_img{
+    display: flex;
+    justify-content: center; /* Logos horizontal zentrieren */
+    align-items: center; /* Logos vertikal zentrieren */
+    gap: 60px;
+}
+
+.partner_img img {
+    width: 250px; /* Einheitliche Breite */
+    height: 120px; /* Einheitliche Höhe */
+    object-fit: contain; /* Behält das Seitenverhältnis der Logos bei */
+    margin: 10px; /* Abstand um jedes Bild */
+}
+
+
+.shortcuts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 5%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.newsletter img{
+    width: 100px;
+    margin-bottom: 10%;
+
+}
+
+.login_form{
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.login_form button{
+    background-color: #6863F2;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+.login_form button:hover{
+    cursor: pointer;
+    color: #6863F2;
+    background-color: #EFEEF5;
+    border: 1px solid #6863F2
+}
+
+#email{
+    border-radius: 6px;
+    border-style: none;
+    border: 1px solid;
+    border-color: gray;
+    padding: 5px;
+}
+
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.supportüberunsstationen li{
+    display: flex; 
+    list-style: none;
+    flex-direction: column;
+}
+
+.support_alles{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.support, .überuns, .stationen{
+    align-items: center;
+}
+
+.support a, .überuns a, .stationen a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.support_alles li a {
+    font-weight: bold;
+}
+
+ /* ending footer */
+.ending{
+    background-color: white;
+}
+
+.menu_ending{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    align-items: center;
+    margin: 0% 2% 0% 2%;
+    
+}
+
+.nav_ending a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    gap: 100px;
+
+}
+
+.nav_ending{
+    display: flex;
+    gap: 30px;
+}
+
+
+.socialmedia{
+    justify-content: right;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}

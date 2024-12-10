@@ -1,0 +1,251 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif; 
+}
+
+body{
+    background-color: #EFEEF5;
+    /* font-family: Arial, sans-serif; */
+}
+
+/* HEADER */
+header{
+    background-color: white;
+}
+
+.menu_gesamt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+#logo_nav img {
+    width: 100px;
+    height: auto;
+}
+
+.nav_menu{
+    display: flex;
+    gap: 30px;  
+    margin: 30px;  
+}
+
+.nav_menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav_menu a:hover {
+    color: #9592F0;
+}
+    
+
+#logo_nav{
+    width: 100px;
+    height: 65px;
+    justify-content: left;  
+    /* border: 3px black solid; */
+    
+}
+
+/* Styling Stationen */
+
+#stationen_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    gap: 20px;
+    /* Farbe des Vision Containers */
+    background-color: #efeef5;
+}
+  
+#stationen_container h1 {
+    font-size: 40px;
+    text-wrap: wrap;
+    text-align: center;
+    font-weight: 300;
+}
+  
+#stationen_container_button{
+    display: flex;
+    gap: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#stationen_container button {
+    background-color: #6863F2;
+    color: white;
+    padding: 18px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+    padding-left: 30%; 
+    padding-right: 30%;
+}
+  
+#stationen_container button:hover {
+    cursor: pointer;
+    color: #6863F2;
+    background-color: #EFEEF5;
+    border: 1px solid #6863F2
+}
+
+  /* Abstellstationen Grafik */
+
+#abstellstationen_titel{
+    background-color: #9592F0;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+
+#abstellstationen_grafik{
+    text-align: center;
+}
+
+#abstellstationen_grafik img {
+    width: 100%;             /* Volle Breite */
+    height: auto;            /* Proportionale Höhe */
+    display: block;          /* Entfernt Leerraum unten */
+}
+
+/* Abstellstationen Ende */
+#abstellstationen_ende{
+    background-color: #9592F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#abstellstationen_ende img{
+    width: 150px;
+    margin: 4%;
+}
+
+
+.shortcuts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 5%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.newsletter img{
+    width: 100px;
+    margin-bottom: 10%;
+
+}
+
+.login_form{
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.login_form button{
+    background-color: #6863F2;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+.login_form button:hover{
+    cursor: pointer;
+    color: #6863F2;
+    background-color: #EFEEF5;
+    border: 1px solid #6863F2
+}
+
+#email{
+    border-radius: 6px;
+    border-style: none;
+    border: 1px solid;
+    border-color: gray;
+    padding: 5px;
+}
+
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.supportüberunsstationen li{
+    display: flex; 
+    list-style: none;
+    flex-direction: column;
+}
+
+.support_alles{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.support, .überuns, .stationen{
+    align-items: center;
+}
+
+.support a, .überuns a, .stationen a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.support_alles li a {
+    font-weight: bold;
+}
+
+
+/* ending footer */
+.ending{
+    background-color: white;
+}
+
+.menu_ending{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    align-items: center;
+    margin: 0% 2% 0% 2%;
+    
+}
+
+.nav_ending a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    gap: 100px;
+
+}
+
+.nav_ending{
+    display: flex;
+    gap: 30px;
+}
+
+
+.socialmedia{
+    justify-content: right;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}

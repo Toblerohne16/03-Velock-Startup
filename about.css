@@ -1,0 +1,391 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #efeef5;
+  font-family: "poppins", sans-serif;
+  /* font-family: Arial, sans-serif; */
+}
+
+header {
+  background-color: white;
+}
+
+.menu_gesamt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  list-style: none;
+}
+
+#logo_nav img {
+  width: 100px;
+  height: auto;
+}
+
+.nav_menu {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+}
+
+.nav_menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav_menu a:hover {
+  color: #9592f0;
+}
+
+#logo_nav {
+  width: 100px;
+  height: 65px;
+  justify-content: left;
+}
+
+/* Unsere Vision Styling */
+
+#vision_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+  gap: 20px;
+  /* Farbe des Vision Containers */
+  background-color: #efeef5;
+}
+
+#vision_container h1 {
+  font-size: 40px;
+  text-wrap: wrap;
+  text-align: center;
+  font-weight: 300;
+}
+
+#vision_container button {
+  background-color: #6863F2;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+  padding-left: 5%; 
+  padding-right: 5%;
+}
+
+#vision_container button:hover {
+  cursor: pointer;
+  color: #6863F2;
+  background-color: #EFEEF5;
+  border: 1px solid #6863F2
+}
+
+/* Unser Team */
+
+#unser_team_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #9592f0;
+  padding: 5%;
+  flex-wrap: wrap;
+}
+
+#text_container {
+  flex: 1;
+}
+
+#fotos_team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 1 fraction wird 3 Mal wiederholt */
+  gap: 20px; /* Abstand zwischen den Fotos */
+  justify-items: center;
+}
+
+.team_member {
+  background-color: #6e5db6;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  width: 200px; /* Breite der Bilder */
+  height: auto; /* Automatische Höhe */
+}
+
+.fotos {
+  height: 150px; /* Höhe der Bilder */
+  width: 100%; /* Breite passt sich an die Karte an */
+  object-fit: cover; /* Schneidet das Bild korrekt zu */
+  margin-bottom: 20px; /* Abstand zwischen Bild und Name */
+  border-radius: 5px;
+}
+
+.team_name {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center; /* Zentriert den Namen */
+}
+
+#text_container h1 {
+  font-weight: lighter;
+  color: white;
+  font-size: 80px;
+}
+
+/* Das sind wir Container */
+#das_sind_wir_container {
+  text-align: center;
+  padding: 5% 33%;
+}
+
+/* Wie alles begann */
+
+#wie_alles_begann_container {
+  display: flex;
+  align-items: center;
+  padding: 5% 5%;
+  background-color: #9592f0;
+  gap: 5%;
+}
+
+#wie_alles_begann_skizzen {
+  align-items: center;
+  width: 100%;
+}
+
+#wie_alles_begann_skizzen img {
+  height: 700px;
+}
+
+#wie_alles_begann_text {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+#wie_alles_begann_text h1 {
+  font-weight: lighter;
+  color: white;
+  font-size: 80px;
+}
+
+/* Container beige - gehört immer noch zu "Wie alles begann"  */
+
+#wie_alles_begann_container_beige {
+  display: flex;
+  align-items: center;
+  padding: 5% 5%;
+  gap: 5%;
+}
+
+#text_prozess {
+  text-align: center;
+  width: 100%;
+}
+
+#container_foto_prozess {
+  align-items: center;
+  width: 100%;
+}
+
+/* Unsere Werte */
+
+#unsere_werte_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #9592f0;
+  padding: 5%;
+  flex-wrap: wrap;
+}
+
+#unsere_werte_titel {
+  flex: 1;
+}
+
+#unsere_werte_titel h1 {
+  font-weight: lighter;
+  color: white;
+  font-size: 80px;
+}
+
+#unsere_werte_icon_container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* 1 fraction (= Unterteilung) wird 3 Mal wiederholt */
+  gap: 40px; /* Abstand zwischen den Fotos */
+  justify-items: center;
+}
+
+.werte_icon {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  width: 200px;
+  height: auto;
+}
+
+.werte_icon img {
+  max-width: 100px; /* Maximale Breite */
+  max-height: 100px; /* Maximale Höhe */
+  object-fit: contain; /* Verhindert Verzerrungen */
+  margin: 0 auto; /* Zentriert das Bild */
+}
+
+/* Newsletter */
+.shortcuts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 5%;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.newsletter img {
+  width: 100px;
+  margin-bottom: 10%;
+}
+
+.login_form {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.login_form button {
+  background-color: #6863f2;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+.login_form button:hover {
+  cursor: pointer;
+  color: #6863f2;
+  background-color: #efeef5;
+  border: 1px solid #6863f2;
+}
+
+.shortcuts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 5%;
+}
+
+.newsletter img {
+  width: 100px;
+  margin-bottom: 10%;
+}
+
+.login_form {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.login_form button {
+  background-color: #6863f2;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+.login_form button:hover {
+  cursor: pointer;
+  color: #6863f2;
+  background-color: #efeef5;
+  border: 1px solid #6863f2;
+}
+
+#email {
+  border-radius: 6px;
+  border-style: none;
+  border: 1px solid;
+  border-color: gray;
+  padding: 5px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.supportüberunsstationen li {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+.support_alles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.support,
+.überuns,
+.stationen {
+  align-items: center;
+}
+
+.support a,
+.überuns a,
+.stationen a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.support_alles li a {
+  font-weight: bold;
+}
+
+/* ending footer */
+.ending {
+  background-color: white;
+}
+
+.menu_ending {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+  align-items: center;
+  margin: 0% 2%;
+}
+
+.nav_ending a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  gap: 100px;
+}
+
+.nav_ending {
+  display: flex;
+  gap: 30px;
+}
+
+.socialmedia {
+  justify-content: right;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
